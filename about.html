@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Portfolio</title> -->
+    <link rel="stylesheet" href="styles.css">
+    <title>RohanRai-Portfolio</title>
+    <style>
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            position: sticky; /* Makes the navbar stick to the top */
+            top: 0; /* Sticks to the top of the page */
+            z-index: 1000; /* Ensures the navbar is above other content */
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: darkslategray;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .intro {
+            display: flex;
+            align-items: center;
+        }
+        .intro-text {
+            max-width: 600px;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .grid-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item h2 {
+            font-size: 20px;
+            color: #555;
+        }
+        .grid-item p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <!-- About Section -->
+        <div class="container">
+            <div class="intro">
+                <img src="rohan.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="intro-text">
+                    <h1>Hi, I'm [Rohan Kumar Rai]!</h1>
+                    <p>
+                        Hello, I'm Rohan Kumar Rai, a Software engineer with a specialization in data science. My passion lies in leveraging 
+                        technology and data to derive meaningful insights and solve complex problems. With a background in computer engineering, 
+                        I possess a strong foundation in the principles of computing, programming, and data analysis.As a data scientist I am skilled in
+                        employing various statistical and machine learning techniques to extract valuable knowledge from diverse datasets. I thrive
+                        on the challenge of transforming raw data into actionable intelligence, contributing to informed decision-making processes.
+                        My proficiency in programming languages and data manipulation tools enables me to develop efficient solutions and models for
+                        real-world applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="grid">
+                <div class="grid-item">
+                    <h2>Education</h2>
+                    <p>B.Tech in Computer Engineering specializing in Data Science & Machine learning.</p>
+                </div>
+                <div class="grid-item">
+                    <h2>Current Focus</h2>
+                    <p>Studying Data Science and Data Structures while managing college work.</p>
+                </div>
+                <div class="grid-item">
+                    <h2>Skills</h2>
+                    <p>Python & Libraries, EDA, SQL, Machine Learning, Deep learning and Data Visualization.</p>
+                </div>
+                <div class="grid-item">
+                    <h2>Future Goals</h2>
+                    <p>Aiming to start an IT company focusing on data science services in e-commerce and finance sectors.</p>
+                </div>
+                <div class="grid-item">
+                    <h2>Interests</h2>
+                    <p>Data analytics, Artificial Intelligence, and building innovative solutions.</p>
+                </div>
+                <div class="grid-item">
+                    <h2>Personal Projects</h2>
+                    <p>Working on various projects to apply data science techniques in real-world scenarios.</p>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
